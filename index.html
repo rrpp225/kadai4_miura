@@ -7,6 +7,7 @@
     <title>design cafe</title>
     <meta name="discription" content="カフェのサイトです。">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
 <!--header-->
@@ -22,10 +23,25 @@
                     <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="slider">
-            <p><img src="images/pc_first-100.jpg" alt="カフェの様子"></p>
-         </div>
+            <p>
+                <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="カフェの様子">
+                </picture>
+            </p>
+        </div>
     </header>
 <!--/header-->
 
@@ -34,14 +50,19 @@
     <div class="title">
         <p class="english">Have a happy day From a cup of coffee.</p>
         <p class="japanese">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-        <p class="massage">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+        <p class="massage">毎日を丁寧に大切に過ごしたい。<br class="br_sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br class="br_sp">こだわりのコーヒーを提供したい。</p>
     </div>
 
     <section id="about">
         <div class="about_us">
-            <img src="images/pc_about-100.jpg" alt="コーヒーカップで乾杯" class="about_us_images">
-            <div class="about_us_content">
-            <h2 class="title_pc"><img src="images/about_us@2x.png" alt="私たちについて"></h2>
+            <picture>
+                <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_about-100.jpg" alt="コーヒーカップで乾杯" class="about_us_images">
+            </picture>
+                <div class="about_us_content">
+            <h2 class="title_pc">
+                <img src="images/about_us@2x.png" alt="私たちについて">
+            </h2>
                 <p class="about_us_maintext">私たちが提供する<br>こだわりのコーヒー</p>
                 <p class="about_us_subtext">サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。</p>
             </div>
@@ -54,25 +75,25 @@
             <div class="menu_content_wrap">
             <div class="menu_content">
                 <img src="images/pc_menu_drink-100.jpg" alt="ドリンクメニュー">
-                 <div class="menu_items">
-                   <h3>Drink</h3>
-                   <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                 </div>
+                    <div class="menu_items">
+                    <h3>Drink</h3>
+                    <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    </div>
             </div>
 
             <div class="menu_content">
                 <img src="images/pc_menu_food-100.jpg" alt="フードメニュー">
-                 <div class="menu_items">
-                   <h3>Food</h3>
-                   <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
-                 </div> 
+                    <div class="menu_items">
+                    <h3>Food</h3>
+                    <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    </div> 
             </div>
 
             <div class="menu_content">
                 <img src="images/pc_menu_sweets-100.jpg" alt="スイーツメニュー">
                 <div class="menu_items">
-                  <h3>Sweets</h3>
-                  <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                    <h3>Sweets</h3>
+                    <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
             </div>
         </div>
@@ -90,6 +111,7 @@
                 <li><img src="images/pc_gallary_01-100.jpg" alt="コーヒーアート"></li>
             </ul>
         </div>
+    </section>    
 
     <section id="event">
         <div class="event_wrap">
@@ -112,20 +134,20 @@
             </div>
         </div>
     </section>
-</section>
+
 </article>
 <!--/main-->
 
 <!--footer-->
-  <footer>
+<footer>
     <div class="footer_wrap">
         <div>
-          <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ　赤レンガ倉庫のカフェ">
+        <img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェ　赤レンガ倉庫のカフェ">
             <ul>
-              <li>OPEN 18:00 / CLOSE 24:00</li>
-              <li>〒150-0022</li>
-              <li>東京都渋谷区東京南123デザインビルB1</li>
-              <li>MAIL:info@designcafe.tokyo</li>
+                <li>OPEN 18:00 / CLOSE 24:00</li>
+                <li>〒150-0022</li>
+                <li>東京都渋谷区東京南123デザインビルB1</li>
+                <li>MAIL:info@designcafe.tokyo</li>
             </ul>
         </div>
         <p class="copy">&copy;2021 DESIGN CAFE</p>
@@ -133,8 +155,17 @@
     <p class="to_top">
         <a href="#header"><img src="images/to_top@2x.png" alt="トップへ戻る"></a>
     </p>
-  </footer>
+</footer>
 <!--/footer-->
+
+<script>
+    $(function(){
+        $('.sp_btn').on('click',function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+        })
+    })
+</script>
 
 </body>
 

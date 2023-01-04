@@ -108,14 +108,14 @@ body{
     line-height: 3.8;
     margin-bottom: 63px;
     font-weight: normal;
-  }
+}
 
 .japanese{
     font-size: 82px;
     line-height: 1.2;
     letter-spacing: 0.1em;
     margin-bottom: 51px;
-  }
+}
 
 .massage{
     font-size: 23px;
@@ -298,7 +298,7 @@ footer{
     margin-right: 68px;
 }
 
-.footer_wrao ul{
+.footer_wrap ul{
     font-size: 20px;
     line-height: 1.95;
     text-align: left;
@@ -321,6 +321,190 @@ footer{
     right: 45px;
     position: fixed;
 }
+
+.sp_nav{
+    display: none;
+}
+
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .pc_nav{
+        display: none;
+    }
+    .sp_btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        height: 33px;
+        z-index: 999;
+    }
+    .sp_btn span{
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,.sp_btn span::after{
+        content: '';
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before{
+        bottom: 10px;
+    }
+
+    .sp_btn span::after{
+        top: 10px;
+    }
+
+    .open span{
+        background: transparent;
+
+    }
+
+    .open span::before{
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after{
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    
+    .sp_nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+    }
+
+    .sp_nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sp_nav ul li{
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 0;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+/* メイン */
+    .japanese{
+        font-size: 70px;
+    }
+    .massage{
+        font-size: 20px;
+    }
+
+/* ABOUT US */
+    .about_us_maintext{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width:767px){
+/* メイン */
+    .title{
+        margin: 41px 0 66px;
+    }
+
+    .br_sp{
+        display: block;
+    }
+
+    .english{
+        font-size: 4.5vw;
+        margin-bottom: 28px;
+    }
+
+    .japanese{
+        font-size: 10.1vw;
+        margin-bottom: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .massage{
+        font-size: 4.3vw;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+    }
+
+/* ABOUT US */
+    .about_us{
+        display: block;
+        margin-bottom: 57px;
+    }
+
+    .about_us_images{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .title_pc{
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+    .about_us_maintext{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about_us_subtext{
+        display: block;
+        margin: 0 auto;
+    }
+
+/* メニュー */
+    .menu_wrap{
+        margin-bottom: 95px;
+        margin: 0 auto;
+    }
+
+    .menu_pc{
+        margin-bottom: 22px;
+    }
+
+    .menu_content_wrap{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .menu_content{
+        margin: 0 auto;
+        max-width: 100%;
+
+    }
+
+
+
+
+} 
+
+
+
+
 
 
 
