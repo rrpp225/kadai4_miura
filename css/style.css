@@ -49,6 +49,11 @@ img {
     border: none;
 }
 
+html{
+    /* スムーススクロール */
+    scroll-behavior: smooth;
+}
+
 /* ヘッダー */
 
 .header_wrap{
@@ -144,9 +149,7 @@ picture{
 }
 
 .about_us_images{
-    
     border-radius: 0 0 60px 0;
-    margin-right: 79px;
 }
 
 .title_pc{
@@ -248,7 +251,7 @@ picture{
 .event_content{
     border: 3.7px solid #4f260b;
     background-color: #fff;
-    padding: 45px 0 ;
+    padding: 45px 10px ;
     display: flex;
     justify-content: center;
 }
@@ -478,6 +481,10 @@ footer{
         margin-bottom: 35px;
     }
 
+    .about_us_content{
+        width:auto;
+    }
+
     .title_pc{
         margin: 0 auto;
         margin-bottom: 17px;
@@ -493,8 +500,6 @@ footer{
     }
 
     .about_us_maintext{
-        width: 100%;
-        margin: 0 auto;
         padding: 0 20px;
         margin-bottom: 32px;
     }
@@ -601,7 +606,7 @@ footer{
 /* sp_フッター */
 
 footer{
-    padding: 47px 50px 31px 23px;
+    padding: 47px 50px 0 23px;
 }
 
 .footer_wrap div{
@@ -609,7 +614,7 @@ footer{
     max-width: 1000px;
     margin: 0 auto;
     align-items: flex-start;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .footer_wrap img{
@@ -633,8 +638,8 @@ footer{
 
 .to_top{
     width: 100px;
+    bottom: 10px;
+    right: 10px;
 }
-
-
 
 }
