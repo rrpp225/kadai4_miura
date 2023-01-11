@@ -252,6 +252,11 @@ picture{
     padding: 0;
 }
 
+/* lightbox調整 */
+.lb-data .lb-number{
+    display: none !important;
+}
+
 /* イベント */
 .event_wrap{
     max-width: 1000px;
